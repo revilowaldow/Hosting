@@ -1,0 +1,904 @@
+{
+	"$schema": "../schema.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "Nevermore_Races",
+				"abbreviation": "NVMR",
+				"full": "Nevermore Races",
+				"authors": [
+					"Xadrow"
+				],
+				"convertedBy": [
+					"revilowaldow"
+				],
+				"version": "2021.01.20",
+				"color": "a2201f",
+				"url": "https://www.google.com/images",
+				"targetSchema": "1.5.0"
+			}
+		],
+		"dateAdded": 1611182020,
+		"dateLastModified": 1611182020
+	},
+	"race": [
+		{
+			"name": "Dhampir",
+			"source": "Nevermore_Races",
+			"page": "5",
+			"ability": [
+				{
+					"wis": 2,
+					"cha": 1
+				}
+			],
+			"size": "M",
+			"speed": 30,
+			"darkvision": 60,
+			"alias": [
+				"Child of the Undead"
+			],
+			"traitTags": [
+				"Monstrous Race",
+				"Spellcasting"
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"entries": [
+						"Dhampirs mature about as fast as humans, but past their prime they will hardly age. Your lifespan is about 250 years."
+					]
+				},
+				{
+					"name": "Alignment",
+					"entries": [
+						"Dhampirs usually have conflicting emotions with their vampire fathers, and thus usually tend to more good or neutral alignments."
+					]
+				},
+				{
+					"name": "Unfazed Charmer",
+					"entries": [
+						"You have advantage on saving throws against spell effects that attempt to charm or frighten you."
+					]
+				},
+				{
+					"name": "Innate Spellcasting",
+					"entries": [
+						"You can cast {@spell animal friendship} an unlimited number of times with this trait, but you can target only animals of the night, such as {@creature bat|MM|bats}, {@creature owl|MM|owls} or {@creature wolf|MM|wolves}.",
+						"Starting at 3rd level, you can also cast {@spell suggestion} with this trait. Once you cast it, you can't do so again until you finish a long rest.",
+						"Charisma is your spellcasting ability for these spells."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Draconic."
+					]
+				}
+			],
+			"languageProficiencies": [
+				{
+					"draconic": true,
+					"common": true
+				}
+			]
+		},
+		{
+			"name": "Haunt",
+			"source": "Nevermore_Races",
+			"page": "6",
+			"ability": [
+				{
+					"con": 1
+				}
+			],
+			"size": "V",
+			"speed": {
+				"walk": 30
+			},
+			"darkvision": 60,
+			"traitTags": [
+				"Damage Immunity",
+				"Improved Resting",
+				"Monstrous Race"
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"entries": [
+						"You do not age past the age of your point of death and cannot die through aging."
+					]
+				},
+				{
+					"name": "Alignment",
+					"entries": [
+						"Your alignment tends to chaotic as your soul tries to understand why it wasn’t allowed to pass onto the afterlife."
+					]
+				},
+				{
+					"name": "Size",
+					"entries": [
+						"Your size depends on your race in life."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can read, speak and write any language you spoke in life."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"name": "Undead Nature",
+					"entries": [
+						"You are immune to poison damage and cannot be poisoned.",
+						"You don’t require air, food or drink. Instead of sleeping, you enter a state of mindlessness where your body remains inert and your soul seeks a way to pass to the afterlife, for 4 hours a day.",
+						"If subjected to the {@classFeature Destroy Undead (CR 1/2)|Cleric||5||Destroy Undead Channel Divinity} feature, you are not destroyed and instead take damage as indicated in the table below:",
+						{
+							"type": "table",
+							"caption": "Destroy Undead Damage",
+							"colLabels": [
+								"Destroy Undead Level",
+								"Radiant Damage"
+							],
+							"colStyles": [
+								"col-4",
+								"col-6"
+							],
+							"rows": [
+								[
+									"{@classFeature Destroy Undead (CR 1/2)|Cleric||5||CR ½}",
+									"{@damage 1d8}"
+								],
+								[
+									"{@classFeature Destroy Undead (CR 1)|Cleric||8||CR 1}",
+									"{@damage 2d8+5}"
+								],
+								[
+									"{@classFeature Destroy Undead (CR 2)|Cleric||11||CR 2}",
+									"{@damage 3d8+10}"
+								],
+								[
+									"{@classFeature Destroy Undead (CR 3)|Cleric||14||CR 3}",
+									"{@damage 4d8+15}"
+								],
+								[
+									"{@classFeature Destroy Undead (CR 4)|Cleric||17||CR 4}",
+									"{@damage 5d8+20}"
+								]
+							]
+						}
+					]
+				}
+			],
+			"subraces": [
+				{
+					"name": "Shambler",
+					"source": "Nevermore_Races",
+					"ability": [
+						{
+							"str": 2,
+							"int": -2
+						}
+					],
+					"entries": [
+						{
+							"type": "section",
+							"entries": [
+								{
+									"name": "Shambler Haunt",
+									"entries": [
+										"Shambler haunts are the bodies of the dead returned to life, whether from a recent death or from a bygone era. Their skin, flesh, tissues and bones are held together with their soul by the ethereal thread of some necromantic influence, divine or otherwise. Shamblers can surpass their bodies’ limits, at the cost of their cognitive capabilities."
+									]
+								}
+							]
+						},
+						{
+							"name": "Undead Fortitude",
+							"entries": [
+								"If you’re reduced to 0 hitpoints, make a constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, you instead drop to 1 hit point instead. You can’t use this feature again until you finish a long rest."
+							]
+						},
+						{
+							"name": "Undead Resilience",
+							"entries": [
+								"You are resistant to necrotic damage."
+							]
+						}
+					],
+					"resist": [
+						"necrotic"
+					],
+					"traitTags": [
+						"Damage Resistance"
+					]
+				},
+				{
+					"name": "Spectral",
+					"source": "Nevermore_Races",
+					"ability": [
+						{
+							"cha": 2,
+							"wis": -2
+						}
+					],
+					"entries": [
+						{
+							"type": "section",
+							"entries": [
+								{
+									"name": "Spectral Haunt",
+									"entries": [
+										"Spectral haunts are the manifestation of the soul that was kept from passing into the afterlife. Confused, they wanders about, resembling much of their previous forms but with an added eerie glow."
+									]
+								}
+							]
+						},
+						{
+							"name": "Speed",
+							"entries": [
+								"You have a flight speed of 15ft."
+							]
+						},
+						{
+							"name": "Ethereal Shift",
+							"entries": [
+								"You are incorporeal. As a reaction, you can halve any non-magical weapon damage. You can use this ability once per long rest."
+							]
+						},
+						{
+							"name": "Incorporeal Movement",
+							"entries": [
+								"As an action, you can become fully incorporeal. Your remaining movement is halved for the rest of your turn. You can spend the rest of your turn to move through creatures and objects, including walls. While you are in the same space as a creature or an object, you are blinded. You remain blinded until you move to an unoccupied space. At the end of your turn, your spectral form re-condenses and your incorporeal movement ends. If you end your turn in the same position as another creature or object, you are ejected into the nearest unoccupied space, and take force damage equal to twice the number in feet you were moved. You can’t use this feature again until you finish a long rest."
+							]
+						}
+					],
+					"speed": {
+						"fly": 15,
+						"walk": 30
+					}
+				}
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"immune": [
+				"poison"
+			]
+		},
+		{
+			"name": "Oozeling",
+			"source": "Nevermore_Races",
+			"page": "7",
+			"ability": [
+				{
+					"dex": 2,
+					"wis": 1,
+					"con": -2
+				}
+			],
+			"size": "M",
+			"speed": 30,
+			"alias": [
+				"Child of the Undead"
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"entries": [
+						"Oozelings become fully independent after about a month of growing matter, and develop humanoid traits after a year. Oozelings live about 50 years before having amassed enough matter to further multiply, which subsequently results in the death of said oozeling."
+					]
+				},
+				{
+					"name": "Alignment",
+					"entries": [
+						"Your alignment is neutral."
+					]
+				},
+				{
+					"name": "Size",
+					"entries": [
+						"Oozeling vary in size from 4 to 6 feet tall, depending on the stage of their growth. Older oozelings are taller. Your size is medium."
+					]
+				},
+				{
+					"name": "Amorphous",
+					"entries": [
+						"You can move through a space as narrow as one inch without squeezing."
+					]
+				},
+				{
+					"name": "Pigmented Skin",
+					"entries": [
+						"Your skin has a certain colour. Choose one type of skin pigment from the table. You gain an elemental resistance determined by the pigment, as shown in the table below.",
+						{
+							"type": "table",
+							"caption": "Skin Pigment",
+							"colLabels": [
+								"Pigment Colour",
+								"Origin",
+								"Damage Type"
+							],
+							"colStyles": [
+								"col-4 text-center",
+								"col-4 text-center",
+								"col-4 text-center"
+							],
+							"rows": [
+								[
+									"Black",
+									"Rotten Flesh",
+									"Acid"
+								],
+								[
+									"Blue",
+									"Cerebal Fluid",
+									"Lightning"
+								],
+								[
+									"Green",
+									"Bile",
+									"Poison"
+								],
+								[
+									"Red",
+									"Blood",
+									"Necrotic"
+								],
+								[
+									"White",
+									"Bone",
+									"Cold"
+								]
+							]
+						}
+					]
+				},
+				{
+					"name": "Shifting Nucleus",
+					"entries": [
+						"When hit by an attack, you shift your nucleus to protect it from incoming damage. As a reaction, you can fully negate all bludgeoning, piercing, or slashing damage from a nonmagical weapon attack. You cannot use this ability again until you complete a long rest."
+					]
+				},
+				{
+					"name": "Slippery Membrane",
+					"entries": [
+						"Your body is composed of an odd amalgam of ectoplasm and slime. While not wearing armour, your natural AC is 10 + your dexterity modifier + your proficiency modifier. Your body cannot support heavy armour. You cannot use weapons with the heavy property or shields."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Primordial."
+					]
+				}
+			],
+			"resist": [
+				{
+					"choose": {
+						"from": [
+							"acid",
+							"lightning",
+							"poison",
+							"necrotic",
+							"cold"
+						]
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"primordial": true,
+					"common": true
+				}
+			],
+			"traitTags": [
+				"Damage Resistance",
+				"Monstrous Race",
+				"Natural Armor"
+			],
+			"fluff": {
+				"name": "Oozeling",
+				"source": "Nevermore_Races",
+				"entries": [
+					{
+						"name": "Experimental Origins",
+						"entries": [
+							"Where once powerful monster from outer worlds had decided to experiment with oozes and slimes, so too have vampire lords wished to grasp the potential power of fluid servants. But where the Illithids had somewhat succeeded in creating creatures they could control, the blood driven mages did not, and thus was born the Oozeling, a sentient but single minded creature which, at the first moment of its creation, could only think of escaping it’s captors.",
+							"Oozelings were originally created as a byproduct of vampire bio-engineering from messing with oozes and humanoid organic matter, wether it be bone, fleshy tissues or humors."
+						]
+					},
+					{
+						"name": "Social Clusters",
+						"entries": [
+							"After several oozelings managed to escape the laboratories they were created in, they decided to try and create small communities, in hopes of saving more of their brethren. Groups would attempt to hide in abandoned towns, small villages, or in underground caverns. Eventually they would come to understand that their population would, over the years, grow exponentially as they grew older and multiply through cellular division.",
+							"To keep their own population in check, volunteers have offered to leave the clusters to either die or create new clusters further away from the homestead.",
+							"It is unknown how many of the original oozelings currently still exist."
+						]
+					},
+					{
+						"name": "Afraid and Alone",
+						"entries": [
+							"Oozelings resent their creators and are warry of trusting strangers. They prefer remaining within their cluster if possible, but should their safety be jeopardized, they are more than willing to flee. They understand that so long as one survives, their species will live on. Society and culture is not something they fully grasp, having only recently been brought into a world where they have known only fear and pain."
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Vampire Spawn",
+			"source": "Nevermore_Races",
+			"page": "9",
+			"ability": [
+				{
+					"cha": 2,
+					"con": 1
+				},
+				{
+					"cha": 2,
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis"
+						],
+						"count": 1
+					}
+				}
+			],
+			"size": "V",
+			"speed": {
+				"walk": 30
+			},
+			"darkvision": 60,
+			"alias": [
+				"Vampire"
+			],
+			"traitTags": [
+				"Damage Immunity",
+				"Monstrous Race",
+				"Spellcasting",
+				"Unarmed Strike"
+			],
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"name": "Creating a Vampire Spawn",
+							"entries": [
+								"To become a vampire spawn is to die and be reborn by the grace of another vampire who decided not to make a meal out of you. As such, it is a transformation from your base character. To become a vampire spawn, you must be a humanoid with no fiendish, celestial or draconic ancestry, and must not already be an undead. Your base race traits and abilities are replaced with the traits of the vampire race.",
+								"As a vampire spawn, while you have your own will and are free to act as you please, you are subservient to your progenitor, and the true vampire who created you has full control over your actions. You cannot willingly hurt or affect your creator.",
+								"newly created vampire spawn has 4 levels of Exhaustion. To recover from these exhaustion points, the vampire spawn must rest and drink a pint of blood during each rest. After this, the required blood to sustain itself is defined by the Bloodthirst trait."
+							]
+						}
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Variant Ability Scores",
+					"entries": [
+						"Should your character become a vampire spawn during their adventure, their original race ability score increases are replaced by the ones for the vampire spawn. However, they can decide to forgo the Constitution score increase and instead increase by 1 an ability score of their choosing. You cannot increase your Charisma score by a total of 3 points using this variant."
+					]
+				},
+				{
+					"name": "Age",
+					"entries": [
+						"You do not age past your age at your point of transformation. Your skin will turn to a pale white or grey over time."
+					]
+				},
+				{
+					"name": "Alignment",
+					"entries": [
+						"Your alignment turns to Lawful. You are loyal to your creator, whether you like it or not."
+					]
+				},
+				{
+					"name": "Size",
+					"entries": [
+						"Your size depends on your race in life."
+					]
+				},
+				{
+					"name": "Bloodthirst",
+					"entries": [
+						"You do not require food or water to survive. You sustain yourself through the consumption of a pint of humanoid blood. You can survive an amount of days equal to your character’s level before needing to feed (for example, a level 5 vampire can last 5 days without drinking blood). If this amount of days is exceeded, the vampire spawn will take a point of exhaustion for every 2 hours they go without feeding until death. All points of exhaustion acquired by this method are removed once the vampire has fed."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"Your canine teeth increase in size and sharpen, becoming effective daggers to puncture through flesh. As part of the attack action, you can make one unarmed strike using your bite. You deal {@dice 1d6} + your Charisma modifier worth of piercing damage."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"name": "Innate Magic",
+					"entries": [
+						"You know the {@spell Minor Illusion} cantrip. When you reach 3rd level, you can cast the {@spell Charm Person} spell once per day. When you reach the 5th level, you can also cast the {@spell Darkness} spell once per day. Charisma is your spellcasting ability for these spells."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You read, speak, and write any language you already spoke from your base race."
+					]
+				},
+				{
+					"name": "Sunlight Hypersensitivity",
+					"entries": [
+						"You take {@damage 2d10} radiant damage when you start your turn exposed to sunlight. While exposed to sunlight, you have disadvantage on attack rolls, ability checks, and death saving throws. Burns sustained by sunlight remain as permanent scars. If the vampire spawn dies due to exposure to sunlight, his body turns to ash."
+					]
+				},
+				{
+					"name": "Unfazed Charmer",
+					"entries": [
+						"You have advantage on saving throws against spell effects that attempt to charm or frighten you."
+					]
+				},
+				{
+					"name": "Undead Nature",
+					"entries": [
+						"You are immune to poison damage and cannot be poisoned.",
+						"If subjected to the {@classFeature Destroy Undead (CR 1/2)|Cleric||5||Destroy Undead Channel Divinity} feature, you are not destroyed and instead take damage as indicated in the table below:",
+						{
+							"type": "table",
+							"caption": "Destroy Undead Damage",
+							"colLabels": [
+								"Destroy Undead Level",
+								"Radiant Damage"
+							],
+							"colStyles": [
+								"col-4",
+								"col-6"
+							],
+							"rows": [
+								[
+									"{@classFeature Destroy Undead (CR 1/2)|Cleric||5||CR ½}",
+									"{@damage 1d8}"
+								],
+								[
+									"{@classFeature Destroy Undead (CR 1)|Cleric||8||CR 1}",
+									"{@damage 2d8+5}"
+								],
+								[
+									"{@classFeature Destroy Undead (CR 2)|Cleric||11||CR 2}",
+									"{@damage 3d8+10}"
+								],
+								[
+									"{@classFeature Destroy Undead (CR 3)|Cleric||14||CR 3}",
+									"{@damage 4d8+15}"
+								],
+								[
+									"{@classFeature Destroy Undead (CR 4)|Cleric||17||CR 4}",
+									"{@damage 5d8+20}"
+								]
+							]
+						}
+					]
+				}
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"immune": [
+				"poison"
+			],
+			"languageProficiencies": [
+				{
+					"common": true
+				}
+			],
+			"fluff": {
+				"name": "Vampire",
+				"source": "Nevermore_Races",
+				"entries": [
+					"It is close to midnight, the moonlight barely coming through the darkened cloud filled sky, and a deep fog is resting close to the ground, raising from the forest bordering both sides of the road. If, in addition to that, a figure appears in front of you, offering you safety in their abode out of the kindness of their soul, you’re most likely dealing with a Vampire.",
+					{
+						"name": "Immortal Nobility",
+						"entries": [
+							"While it is not clear how the first vampires came to be, most of them have a claim in one way or another to nobility. Often new true vampires are gifted lands or titles by their former masters as a reward and incentive not to turn on them, thus perpetuating etiquette and fortunes.",
+							"With plenty of time on their hands, vampires work on branching out their influence and increase their wealth in such ways that you probably never would have noticed they had once been no more than a slave or a farmer.",
+							"Vampires pride themselves over the reach of their domain and influence, often caring more about how filled their coffers rather than if their subjects are living happily under their rule.",
+							"Though fear and trickery are often their tools of preference, vampires hold themselves to a certain code of honour and discipline. Those who fall astray of socially acceptable behaviour are quickly ousted or even hunted down."
+						]
+					},
+					{
+						"name": "Long Term Strategists",
+						"entries": [
+							"Being undead but remaining intelligent, vampires have decades, centuries, or maybe millennia to see their schemes come to fruition. While younger vampires usually keep their urge to move things faster as a trait from their previous lives, older vampires are calm and calculated, assessing and measuring their every action. Should something not move into their favour, or the situation not being ideal for the next step in their plan to be launched, they are more than willing to wait 20 to 50 years before making another move."
+						]
+					},
+					{
+						"name": "Vampire Courts",
+						"entries": [
+							"While vampires can rarely claim to be or have families, some of them will bond together over similar interests. Power, wealth, knowledge or lust might drive several vampires to create Courts. Courts are more open groups usually helmed by a select few of the oldest and strongest vampires of the group, and are less fussed about their existence being revealed to the world of the living.",
+							"These groups can easily govern cities, counties, or even kingdoms.",
+							"The Hierarchy in these groups is often relatively straight forward. At the top reside the true vampires (usually the founders), followed by any favoured true vampire allies. Under those come the vampire spawn, powerful pawns and servants to their masters. Finally, cultists and mercenaries, who joined the protection of the court out of devotion, necessity, or fear.",
+							{
+								"name": "Court Names",
+								"entries": [
+									"Ashcroft, Drakuul, Gildheim, Rafvenwout, Rosenkrantz, Schwartzflugel"
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "True Vampire",
+			"source": "Nevermore_Races",
+			"page": "9",
+			"ability": [
+				{
+					"cha": 2,
+					"con": 1
+				},
+				{
+					"cha": 2,
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis"
+						],
+						"count": 1
+					}
+				}
+			],
+			"size": "V",
+			"speed": {
+				"walk": 30
+			},
+			"darkvision": 120,
+			"alias": [
+				"Vampire"
+			],
+			"traitTags": [
+				"Damage Immunity",
+				"Improved Resting",
+				"Magic Resistance",
+				"Monstrous Race",
+				"Spellcasting",
+				"Unarmed Strike"
+			],
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"name": "Creating a Vampire Spawn",
+							"entries": [
+								"To become a vampire spawn is to die and be reborn by the grace of another vampire who decided not to make a meal out of you. As such, it is a transformation from your base character. To become a vampire spawn, you must be a humanoid with no fiendish, celestial or draconic ancestry, and must not already be an undead. Your base race traits and abilities are replaced with the traits of the vampire race.",
+								"As a vampire spawn, while you have your own will and are free to act as you please, you are subservient to your progenitor, and the true vampire who created you has full control over your actions. You cannot willingly hurt or affect your creator.",
+								"newly created vampire spawn has 4 levels of Exhaustion. To recover from these exhaustion points, the vampire spawn must rest and drink a pint of blood during each rest. After this, the required blood to sustain itself is defined by the Bloodthirst trait."
+							]
+						}
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Variant Ability Scores",
+					"entries": [
+						"Should your character become a vampire spawn during their adventure, their original race ability score increases are replaced by the ones for the vampire spawn. However, they can decide to forgo the Constitution score increase and instead increase by 1 an ability score of their choosing. You cannot increase your Charisma score by a total of 3 points using this variant."
+					]
+				},
+				{
+					"name": "Age",
+					"entries": [
+						"You do not age past your age at your point of transformation. Your skin will turn to a pale white or grey over time."
+					]
+				},
+				{
+					"name": "Alignment",
+					"entries": [
+						"Your alignment turns to Lawful. You are loyal to your creator, whether you like it or not."
+					]
+				},
+				{
+					"name": "Size",
+					"entries": [
+						"Your size depends on your race in life."
+					]
+				},
+				{
+					"name": "Bloodthirst",
+					"entries": [
+						"You do not require food or water to survive. You sustain yourself through the consumption of a pint of humanoid blood. You can survive an amount of days equal to your character’s level before needing to feed (for example, a level 5 vampire can last 5 days without drinking blood). If this amount of days is exceeded, the vampire spawn will take a point of exhaustion for every 2 hours they go without feeding until death. All points of exhaustion acquired by this method are removed once the vampire has fed."
+					]
+				},
+				{
+					"name": "Innate Magic",
+					"entries": [
+						"You know the {@spell Minor Illusion} cantrip. When you reach 3rd level, you can cast the {@spell Charm Person} spell once per day. When you reach the 5th level, you can also cast the {@spell Darkness} spell once per day. Charisma is your spellcasting ability for these spells."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You read, speak, and write any language you already spoke from your base race."
+					]
+				},
+				{
+					"name": "Sunlight Hypersensitivity",
+					"entries": [
+						"You take {@damage 2d10} radiant damage when you start your turn exposed to sunlight. While exposed to sunlight, you have disadvantage on attack rolls, ability checks, and death saving throws. Burns sustained by sunlight remain as permanent scars. If the vampire spawn dies due to exposure to sunlight, his body turns to ash."
+					]
+				},
+				{
+					"name": "Undead Nature",
+					"entries": [
+						"You are immune to poison damage and cannot be poisoned.",
+						"If subjected to the {@classFeature Destroy Undead (CR 1/2)|Cleric||5||Destroy Undead Channel Divinity} feature, you are not destroyed and instead take damage as indicated in the table below:",
+						{
+							"type": "table",
+							"caption": "Destroy Undead Damage",
+							"colLabels": [
+								"Destroy Undead Level",
+								"Radiant Damage"
+							],
+							"colStyles": [
+								"col-4",
+								"col-6"
+							],
+							"rows": [
+								[
+									"{@classFeature Destroy Undead (CR 1/2)|Cleric||5||CR ½}",
+									"{@damage 1d8}"
+								],
+								[
+									"{@classFeature Destroy Undead (CR 1)|Cleric||8||CR 1}",
+									"{@damage 2d8+5}"
+								],
+								[
+									"{@classFeature Destroy Undead (CR 2)|Cleric||11||CR 2}",
+									"{@damage 3d8+10}"
+								],
+								[
+									"{@classFeature Destroy Undead (CR 3)|Cleric||14||CR 3}",
+									"{@damage 4d8+15}"
+								],
+								[
+									"{@classFeature Destroy Undead (CR 4)|Cleric||17||CR 4}",
+									"{@damage 5d8+20}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"name": "Becoming a True Vampire",
+							"entries": [
+								"To become a true vampire means to unbind yourself from the shackles of your creator. This is done by drinking the blood of your master. Few vampires will easily relinquish their control over their spawns, seeing them as personal servants or children. Those who have either proven themselves or been gifted this opportunity are no longer under the control of their creator and gain additional traits and abilities."
+							]
+						}
+					]
+				},
+				{
+					"type": "inset",
+					"name": "DM Note",
+					"entries": [
+						"Becoming a True Vampire is a long and arduous task that should not be easy. The creator of the vampire spawn will not be willing to turn a formidable spawn into a free vampire that could defy them. Additionally, the fact that the creator must give their own blood means they must either be convinced or forced by a third party as the vampire spawn cannot go against the will of their creator. A vampire character should at least be of level 15 before turning to a true vampire."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The vampire can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"If you are not in direct sunlight, you can use your action to transform into a tiny bat, a medium cloud of mist, or back to your true form. You can use this action 5 times before a long rest. Anything you are wearing transforms with you, but nothing you are carrying. You return to your true form if you are reduced to 0 hit points in these forms.",
+						"While in bat form, you cannot speak, your walking speed is 5 feet and your flying speed is 30 feet. Your statistics, other than size and speed, remain unchanged.",
+						"While in mist form, you cannot take any actions (other than changing form), speak, or manipulate objects. You are weightless, have a flying speed of 20 feet, can hover, and can enter a hostile creature’s space and end your turn there. If air can pass through a space, you can do so without squeezing. You cannot pass through solid or liquid matter. You are immune to non-magical damage except from exposure to sunlight."
+					]
+				},
+				{
+					"name": "Superior Darkvision",
+					"entries": [
+						"Your darkvision has a radius of 120 ft."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"This trait replaces the Uncharmed Charmer trait. You have advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Greater Bite",
+					"entries": [
+						"Your bite has become caustic and lethal. As part of the attack action, you can make one unarmed strike using your bite. You deal {@damage 1d6} + your Charisma modifier worth of piercing damage and an additional {@damage 3d6} necrotic damage."
+					]
+				},
+				{
+					"name": "Vampiric Healing",
+					"entries": [
+						"When short resting, you can roll additional Hit Dice equal to a quarter of your level rounded down."
+					]
+				},
+				{
+					"name": "Vampiric Heirloom",
+					"entries": [
+						"Once per full moon, you can perform a ritual to transform a creature into a vampire spawn. The target creature must be a humanoid with no fiendish, celestial or draconic ancestry, and must not already be an undead.",
+						"The ritual lasts 1 hour, during which the target’s blood is tainted. You can sire a number of vampire spawn equal to a quarter of your level rounded down. Past that, any attempts at making more will result in the death of the target.",
+						"These vampire spawns cannot willingly directly hurt or affect you and will follow any commands you issue them to the best of their ability. You can order them to do anything, including putting themselves into danger."
+					]
+				}
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"immune": [
+				"poison"
+			],
+			"languageProficiencies": [
+				{
+					"common": true
+				}
+			],
+			"fluff": {
+				"name": "Vampire",
+				"source": "Nevermore_Races",
+				"entries": [
+					"It is close to midnight, the moonlight barely coming through the darkened cloud filled sky, and a deep fog is resting close to the ground, raising from the forest bordering both sides of the road. If, in addition to that, a figure appears in front of you, offering you safety in their abode out of the kindness of their soul, you’re most likely dealing with a Vampire.",
+					{
+						"name": "Immortal Nobility",
+						"entries": [
+							"While it is not clear how the first vampires came to be, most of them have a claim in one way or another to nobility. Often new true vampires are gifted lands or titles by their former masters as a reward and incentive not to turn on them, thus perpetuating etiquette and fortunes.",
+							"With plenty of time on their hands, vampires work on branching out their influence and increase their wealth in such ways that you probably never would have noticed they had once been no more than a slave or a farmer.",
+							"Vampires pride themselves over the reach of their domain and influence, often caring more about how filled their coffers rather than if their subjects are living happily under their rule.",
+							"Though fear and trickery are often their tools of preference, vampires hold themselves to a certain code of honour and discipline. Those who fall astray of socially acceptable behaviour are quickly ousted or even hunted down."
+						]
+					},
+					{
+						"name": "Long Term Strategists",
+						"entries": [
+							"Being undead but remaining intelligent, vampires have decades, centuries, or maybe millennia to see their schemes come to fruition. While younger vampires usually keep their urge to move things faster as a trait from their previous lives, older vampires are calm and calculated, assessing and measuring their every action. Should something not move into their favour, or the situation not being ideal for the next step in their plan to be launched, they are more than willing to wait 20 to 50 years before making another move."
+						]
+					},
+					{
+						"name": "Vampire Courts",
+						"entries": [
+							"While vampires can rarely claim to be or have families, some of them will bond together over similar interests. Power, wealth, knowledge or lust might drive several vampires to create Courts. Courts are more open groups usually helmed by a select few of the oldest and strongest vampires of the group, and are less fussed about their existence being revealed to the world of the living.",
+							"These groups can easily govern cities, counties, or even kingdoms.",
+							"The Hierarchy in these groups is often relatively straight forward. At the top reside the true vampires (usually the founders), followed by any favoured true vampire allies. Under those come the vampire spawn, powerful pawns and servants to their masters. Finally, cultists and mercenaries, who joined the protection of the court out of devotion, necessity, or fear.",
+							{
+								"name": "Court Names",
+								"entries": [
+									"Ashcroft, Drakuul, Gildheim, Rafvenwout, Rosenkrantz, Schwartzflugel"
+								]
+							}
+						]
+					}
+				]
+			}
+		}
+	]
+}
